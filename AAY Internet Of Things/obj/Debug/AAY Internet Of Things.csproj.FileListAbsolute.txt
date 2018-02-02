@@ -1,0 +1,9 @@
+c:\users\sotiris dim\documents\visual studio 2015\Projects\AAY Internet Of Things\AAY Internet Of Things\bin\Debug\AAY Internet Of Things.exe.config
+c:\users\sotiris dim\documents\visual studio 2015\Projects\AAY Internet Of Things\AAY Internet Of Things\bin\Debug\AAY Internet Of Things.exe
+c:\users\sotiris dim\documents\visual studio 2015\Projects\AAY Internet Of Things\AAY Internet Of Things\bin\Debug\AAY Internet Of Things.pdb
+c:\users\sotiris dim\documents\visual studio 2015\Projects\AAY Internet Of Things\AAY Internet Of Things\obj\Debug\AAY Internet Of Things.csprojResolveAssemblyReference.cache
+c:\users\sotiris dim\documents\visual studio 2015\Projects\AAY Internet Of Things\AAY Internet Of Things\obj\Debug\AAY_Internet_Of_Things.Login.resources
+c:\users\sotiris dim\documents\visual studio 2015\Projects\AAY Internet Of Things\AAY Internet Of Things\obj\Debug\AAY_Internet_Of_Things.Properties.Resources.resources
+c:\users\sotiris dim\documents\visual studio 2015\Projects\AAY Internet Of Things\AAY Internet Of Things\obj\Debug\AAY Internet Of Things.csproj.GenerateResource.Cache
+c:\users\sotiris dim\documents\visual studio 2015\Projects\AAY Internet Of Things\AAY Internet Of Things\obj\Debug\AAY Internet Of Things.exe
+c:\users\sotiris dim\documents\visual studio 2015\Projects\AAY Internet Of Things\AAY Internet Of Things\obj\Debug\AAY Internet Of Things.pdb
