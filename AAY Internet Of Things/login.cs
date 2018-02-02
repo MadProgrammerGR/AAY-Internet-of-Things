@@ -23,7 +23,8 @@ namespace AAY_Internet_Of_Things
             String password = textBox2.Text;
             if(username == "user" && password == "pass")
             {
-                //show house form
+                this.Hide();
+                new Home().Show();
             }else
             {
                 MessageBox.Show("Incorrect username or password", "Login Status");
