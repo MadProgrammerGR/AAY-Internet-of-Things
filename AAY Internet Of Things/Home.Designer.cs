@@ -70,6 +70,7 @@
             this.bulb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.bulb.TabIndex = 2;
             this.bulb.TabStop = false;
+            this.bulb.Click += new System.EventHandler(this.bulb_Click);
             this.bulb.MouseEnter += new System.EventHandler(this.item_MouseEnter);
             this.bulb.MouseLeave += new System.EventHandler(this.item_MouseLeave);
             // 
@@ -112,6 +113,7 @@
             this.tv.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.tv.TabIndex = 5;
             this.tv.TabStop = false;
+            this.tv.Click += new System.EventHandler(this.tv_Click);
             this.tv.MouseEnter += new System.EventHandler(this.item_MouseEnter);
             this.tv.MouseLeave += new System.EventHandler(this.item_MouseLeave);
             // 

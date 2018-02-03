@@ -42,5 +42,18 @@ namespace AAY_Internet_Of_Things
             box.Height = prevSize.Height;
             box.Location = new Point(prevLoc.X, prevLoc.Y);
         }
+
+        private bool lights = false;
+        private void bulb_Click(object sender, EventArgs e)
+        {
+            lights = !lights;
+            if (lights) bulb.Image = Properties.Resources.bulb_on;
+            else bulb.Image = Properties.Resources.bulb_off;
+        }
+
+        private void tv_Click(object sender, EventArgs e)
+        {
+            new TV().Show();
+        }
     }
 }
