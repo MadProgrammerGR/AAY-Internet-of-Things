@@ -132,6 +132,7 @@
             this.radio.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.radio.TabIndex = 6;
             this.radio.TabStop = false;
+            this.radio.Click += new System.EventHandler(this.radio_Click);
             this.radio.MouseEnter += new System.EventHandler(this.item_MouseEnter);
             this.radio.MouseLeave += new System.EventHandler(this.item_MouseLeave);
             // 

@@ -60,5 +60,10 @@ namespace AAY_Internet_Of_Things
         {
             new Heating().Show();
         }
+
+        private void radio_Click(object sender, EventArgs e)
+        {
+            new Radio().Show();
+        }
     }
 }
