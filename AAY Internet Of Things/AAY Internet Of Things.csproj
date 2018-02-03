@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Heating.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Heating.Designer.cs">
+      <DependentUpon>Heating.cs</DependentUpon>
+    </Compile>
     <Compile Include="Home.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +72,9 @@
     <Compile Include="TV.Designer.cs">
       <DependentUpon>TV.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Heating.resx">
+      <DependentUpon>Heating.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>

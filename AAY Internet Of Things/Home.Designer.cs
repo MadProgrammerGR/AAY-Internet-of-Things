@@ -99,6 +99,7 @@
             this.heating.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.heating.TabIndex = 4;
             this.heating.TabStop = false;
+            this.heating.Click += new System.EventHandler(this.heating_Click);
             this.heating.MouseEnter += new System.EventHandler(this.item_MouseEnter);
             this.heating.MouseLeave += new System.EventHandler(this.item_MouseLeave);
             // 

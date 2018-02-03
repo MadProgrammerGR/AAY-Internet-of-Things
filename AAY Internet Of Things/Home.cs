@@ -55,5 +55,10 @@ namespace AAY_Internet_Of_Things
         {
             new TV().Show();
         }
+
+        private void heating_Click(object sender, EventArgs e)
+        {
+            new Heating().Show();
+        }
     }
 }

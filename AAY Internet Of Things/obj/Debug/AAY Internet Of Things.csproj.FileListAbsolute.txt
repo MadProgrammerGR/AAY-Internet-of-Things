@@ -9,3 +9,4 @@ c:\users\sotiris dim\documents\visual studio 2015\Projects\AAY Internet Of Thing
 c:\users\sotiris dim\documents\visual studio 2015\Projects\AAY Internet Of Things\AAY Internet Of Things\obj\Debug\AAY Internet Of Things.pdb
 C:\Users\sotiris dim\documents\visual studio 2015\Projects\AAY Internet Of Things\AAY Internet Of Things\obj\Debug\AAY_Internet_Of_Things.Home.resources
 C:\Users\sotiris dim\documents\visual studio 2015\Projects\AAY Internet Of Things\AAY Internet Of Things\obj\Debug\AAY_Internet_Of_Things.TV.resources
+C:\Users\sotiris dim\documents\visual studio 2015\Projects\AAY Internet Of Things\AAY Internet Of Things\obj\Debug\AAY_Internet_Of_Things.Heating.resources

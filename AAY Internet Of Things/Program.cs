@@ -16,7 +16,7 @@ namespace AAY_Internet_Of_Things
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Login());
+            Application.Run(new Heating());
         }
     }
 }
