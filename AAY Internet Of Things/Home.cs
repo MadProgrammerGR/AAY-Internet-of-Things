@@ -65,5 +65,35 @@ namespace AAY_Internet_Of_Things
         {
             new Radio().Show();
         }
+
+        private void fridge_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void wardrobe_Click(object sender, EventArgs e)
+        {
+
+        }
+        protected override bool ProcessCmdKey(ref Message msg, Keys key)
+        {
+            switch (key)
+            {
+                case (Keys.Alt | Keys.D1):
+                    heating_Click(null, null); return true;
+                case (Keys.Alt | Keys.D2):
+                    bulb_Click(null, null); return true;
+                case (Keys.Alt | Keys.D3):
+                    tv_Click(null, null); return true;
+                case (Keys.Alt | Keys.D4):
+                    radio_Click(null, null); return true;
+                case (Keys.Alt | Keys.D5):
+                    fridge_Click(null, null); return true;
+                case (Keys.Alt | Keys.D6):
+                    wardrobe_Click(null, null); return true;
+            }
+            return base.ProcessCmdKey(ref msg, key);
+        }
+
     }
 }

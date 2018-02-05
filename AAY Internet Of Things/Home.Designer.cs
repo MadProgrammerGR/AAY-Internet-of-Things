@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
             this.fridge = new System.Windows.Forms.PictureBox();
             this.bulb = new System.Windows.Forms.PictureBox();
@@ -36,6 +37,7 @@
             this.tv = new System.Windows.Forms.PictureBox();
             this.radio = new System.Windows.Forms.PictureBox();
             this.house = new System.Windows.Forms.Panel();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.fridge)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bulb)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.wardrobe)).BeginInit();
@@ -56,6 +58,8 @@
             this.fridge.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.fridge.TabIndex = 1;
             this.fridge.TabStop = false;
+            this.toolTip1.SetToolTip(this.fridge, "Fridge (Alt+5)");
+            this.fridge.Click += new System.EventHandler(this.fridge_Click);
             this.fridge.MouseEnter += new System.EventHandler(this.item_MouseEnter);
             this.fridge.MouseLeave += new System.EventHandler(this.item_MouseLeave);
             // 
@@ -70,6 +74,7 @@
             this.bulb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.bulb.TabIndex = 2;
             this.bulb.TabStop = false;
+            this.toolTip1.SetToolTip(this.bulb, "Lights (Alt+2)");
             this.bulb.Click += new System.EventHandler(this.bulb_Click);
             this.bulb.MouseEnter += new System.EventHandler(this.item_MouseEnter);
             this.bulb.MouseLeave += new System.EventHandler(this.item_MouseLeave);
@@ -85,6 +90,8 @@
             this.wardrobe.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.wardrobe.TabIndex = 3;
             this.wardrobe.TabStop = false;
+            this.toolTip1.SetToolTip(this.wardrobe, "Wardrobe (Alt+6)");
+            this.wardrobe.Click += new System.EventHandler(this.wardrobe_Click);
             this.wardrobe.MouseEnter += new System.EventHandler(this.item_MouseEnter);
             this.wardrobe.MouseLeave += new System.EventHandler(this.item_MouseLeave);
             // 
@@ -99,6 +106,7 @@
             this.heating.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.heating.TabIndex = 4;
             this.heating.TabStop = false;
+            this.toolTip1.SetToolTip(this.heating, "Heating (Alt+1)");
             this.heating.Click += new System.EventHandler(this.heating_Click);
             this.heating.MouseEnter += new System.EventHandler(this.item_MouseEnter);
             this.heating.MouseLeave += new System.EventHandler(this.item_MouseLeave);
@@ -114,6 +122,7 @@
             this.tv.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.tv.TabIndex = 5;
             this.tv.TabStop = false;
+            this.toolTip1.SetToolTip(this.tv, "TV (Alt+3)");
             this.tv.Click += new System.EventHandler(this.tv_Click);
             this.tv.MouseEnter += new System.EventHandler(this.item_MouseEnter);
             this.tv.MouseLeave += new System.EventHandler(this.item_MouseLeave);
@@ -132,6 +141,7 @@
             this.radio.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.radio.TabIndex = 6;
             this.radio.TabStop = false;
+            this.toolTip1.SetToolTip(this.radio, "Radio (Alt+4)");
             this.radio.Click += new System.EventHandler(this.radio_Click);
             this.radio.MouseEnter += new System.EventHandler(this.item_MouseEnter);
             this.radio.MouseLeave += new System.EventHandler(this.item_MouseLeave);
@@ -151,6 +161,13 @@
             this.house.Name = "house";
             this.house.Size = new System.Drawing.Size(820, 498);
             this.house.TabIndex = 7;
+            // 
+            // toolTip1
+            // 
+            this.toolTip1.AutoPopDelay = 3000;
+            this.toolTip1.InitialDelay = 1000;
+            this.toolTip1.IsBalloon = true;
+            this.toolTip1.ReshowDelay = 100;
             // 
             // Home
             // 
@@ -186,5 +203,6 @@
         private System.Windows.Forms.PictureBox tv;
         private System.Windows.Forms.PictureBox radio;
         private System.Windows.Forms.Panel house;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }

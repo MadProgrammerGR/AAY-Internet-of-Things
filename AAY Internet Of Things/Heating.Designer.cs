@@ -52,7 +52,7 @@
             this.trackBar1.TabIndex = 0;
             this.trackBar1.TickFrequency = 2;
             this.trackBar1.TickStyle = System.Windows.Forms.TickStyle.Both;
-            this.trackBar1.Value = 50;
+            this.trackBar1.Value = 30;
             this.trackBar1.Visible = false;
             this.trackBar1.Scroll += new System.EventHandler(this.trackBar1_Scroll);
             // 
