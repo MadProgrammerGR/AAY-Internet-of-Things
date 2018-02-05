@@ -31,7 +31,7 @@ namespace AAY_Internet_Of_Things
             Color c = Color.FromArgb((int)(ratio * 255), 0, (int)((1 - ratio) * 255));
             drawThermometer(e.Graphics, new SolidBrush(c), w * 3 / 4, ratio * hmax, r * 3 / 4);
 
-            float celsius = 10 + ratio * (30 - 10);
+            float celsius = trackBar1.Value;
             float fahrenheit = 1.8f * celsius + 32;
             label1.Text = celsius + " C";
             label2.Text = fahrenheit + " F";
@@ -46,6 +46,15 @@ namespace AAY_Internet_Of_Things
         private void trackBar1_Scroll(object sender, EventArgs e)
         {
             panel1.Controls[0].Invalidate();
+        }
+
+        private bool active = false;
+        private void button1_Click(object sender, EventArgs e)
+        {
+            active = !active;
+            foreach (Control c in this.Controls) c.Visible = active;
+            button1.Visible = !active;
+            button2.Visible = active;
         }
     }
 

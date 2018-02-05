@@ -31,20 +31,5 @@ namespace AAY_Internet_Of_Things
             }
         }
 
-        private void textBox1_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-            {
-                button1_Click(null,null);
-            }
-        }
-
-        private void textBox2_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-            {
-                button1_Click(null, null);
-            }
-        }
     }
 }

@@ -62,7 +62,6 @@
             this.textBox1.Size = new System.Drawing.Size(144, 25);
             this.textBox1.TabIndex = 1;
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox1_KeyDown);
             // 
             // panel1
             // 
@@ -110,7 +109,6 @@
             this.textBox2.Size = new System.Drawing.Size(144, 25);
             this.textBox2.TabIndex = 2;
             this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox2.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox2_KeyDown);
             // 
             // label1
             // 
@@ -124,6 +122,7 @@
             // 
             // Login
             // 
+            this.AcceptButton = this.button1;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
