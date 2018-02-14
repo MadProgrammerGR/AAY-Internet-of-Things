@@ -78,6 +78,12 @@
     <Compile Include="TV.Designer.cs">
       <DependentUpon>TV.cs</DependentUpon>
     </Compile>
+    <Compile Include="Wardrobe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wardrobe.Designer.cs">
+      <DependentUpon>Wardrobe.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Heating.resx">
       <DependentUpon>Heating.cs</DependentUpon>
     </EmbeddedResource>
@@ -102,6 +108,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TV.resx">
       <DependentUpon>TV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wardrobe.resx">
+      <DependentUpon>Wardrobe.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

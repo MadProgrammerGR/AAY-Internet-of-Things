@@ -73,7 +73,7 @@ namespace AAY_Internet_Of_Things
 
         private void wardrobe_Click(object sender, EventArgs e)
         {
-
+            new Wardrobe().Show();
         }
         protected override bool ProcessCmdKey(ref Message msg, Keys key)
         {
