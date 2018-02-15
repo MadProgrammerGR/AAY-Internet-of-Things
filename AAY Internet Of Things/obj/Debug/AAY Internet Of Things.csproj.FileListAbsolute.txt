@@ -24,3 +24,4 @@ C:\Users\sotiris dim\Documents\Visual Studio 2015\Projects\AAY-Internet-of-Thing
 C:\Users\sotiris dim\Documents\Visual Studio 2015\Projects\AAY-Internet-of-Things\AAY Internet Of Things\obj\Debug\AAY_Internet_Of_Things.TV.resources
 C:\Users\sotiris dim\Documents\Visual Studio 2015\Projects\AAY-Internet-of-Things\AAY Internet Of Things\obj\Debug\AAY Internet Of Things.csproj.GenerateResource.Cache
 C:\Users\sotiris dim\Documents\Visual Studio 2015\Projects\AAY-Internet-of-Things\AAY Internet Of Things\obj\Debug\AAY_Internet_Of_Things.Wardrobe.resources
+C:\Users\sotiris dim\Documents\Visual Studio 2015\Projects\AAY-Internet-of-Things\AAY Internet Of Things\obj\Debug\AAY_Internet_Of_Things.FeedBack.resources

@@ -95,5 +95,21 @@ namespace AAY_Internet_Of_Things
             return base.ProcessCmdKey(ref msg, key);
         }
 
+        private void disconnectToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new Login().ShowDialog();
+            this.Close();
+        }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Made by:\n\t- Giorgos\n\t- Fanis","About");
+        }
+
+        private void feedbackToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new FeedBack().ShowDialog();
+        }
     }
 }

@@ -44,7 +44,8 @@ namespace AAY_Internet_Of_Things
             progress("Connecting with Radio...", 400, 100 - progressBar1.Value);
             this.Invoke((MethodInvoker)delegate {
                 this.Hide();
-                new Home().Show();
+                new Home().ShowDialog();
+                this.Close();
             });
         }
 
