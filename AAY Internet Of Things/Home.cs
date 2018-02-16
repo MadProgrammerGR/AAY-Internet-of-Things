@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -111,5 +112,11 @@ namespace AAY_Internet_Of_Things
         {
             new FeedBack().ShowDialog();
         }
+
+        private void helpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, "manual.chm", HelpNavigator.TopicId, "30");
+        }
+
     }
 }

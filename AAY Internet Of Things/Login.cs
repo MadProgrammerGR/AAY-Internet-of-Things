@@ -56,5 +56,11 @@ namespace AAY_Internet_Of_Things
             Thread.Sleep(time); // to sleep prepei na tre3ei sauto to nhma
             this.Invoke((MethodInvoker)delegate{progressBar1.Value += step;});
         }
+
+        private void Login_HelpButtonClicked(object sender, CancelEventArgs e)
+        {
+            e.Cancel = true;
+            Help.ShowHelp(this, "manual.chm", HelpNavigator.TopicId, "20");
+        }
     }
 }

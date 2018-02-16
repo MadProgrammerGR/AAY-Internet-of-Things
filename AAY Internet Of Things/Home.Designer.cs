@@ -43,6 +43,7 @@
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.feedbackToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.helpProvider1 = new System.Windows.Forms.HelpProvider();
             ((System.ComponentModel.ISupportInitialize)(this.fridge)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bulb)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.wardrobe)).BeginInit();
@@ -57,9 +58,12 @@
             // 
             this.fridge.BackColor = System.Drawing.Color.Transparent;
             this.fridge.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.helpProvider1.SetHelpKeyword(this.fridge, "40");
+            this.helpProvider1.SetHelpNavigator(this.fridge, System.Windows.Forms.HelpNavigator.TopicId);
             this.fridge.Image = ((System.Drawing.Image)(resources.GetObject("fridge.Image")));
             this.fridge.Location = new System.Drawing.Point(462, 317);
             this.fridge.Name = "fridge";
+            this.helpProvider1.SetShowHelp(this.fridge, true);
             this.fridge.Size = new System.Drawing.Size(105, 120);
             this.fridge.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.fridge.TabIndex = 1;
@@ -73,9 +77,12 @@
             // 
             this.bulb.BackColor = System.Drawing.Color.Transparent;
             this.bulb.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.helpProvider1.SetHelpKeyword(this.bulb, "90");
+            this.helpProvider1.SetHelpNavigator(this.bulb, System.Windows.Forms.HelpNavigator.TopicId);
             this.bulb.Image = ((System.Drawing.Image)(resources.GetObject("bulb.Image")));
             this.bulb.Location = new System.Drawing.Point(175, 147);
             this.bulb.Name = "bulb";
+            this.helpProvider1.SetShowHelp(this.bulb, true);
             this.bulb.Size = new System.Drawing.Size(105, 120);
             this.bulb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.bulb.TabIndex = 2;
@@ -89,9 +96,12 @@
             // 
             this.wardrobe.BackColor = System.Drawing.Color.Transparent;
             this.wardrobe.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.helpProvider1.SetHelpKeyword(this.wardrobe, "50");
+            this.helpProvider1.SetHelpNavigator(this.wardrobe, System.Windows.Forms.HelpNavigator.TopicId);
             this.wardrobe.Image = ((System.Drawing.Image)(resources.GetObject("wardrobe.Image")));
             this.wardrobe.Location = new System.Drawing.Point(637, 54);
             this.wardrobe.Name = "wardrobe";
+            this.helpProvider1.SetShowHelp(this.wardrobe, true);
             this.wardrobe.Size = new System.Drawing.Size(117, 137);
             this.wardrobe.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.wardrobe.TabIndex = 3;
@@ -105,9 +115,12 @@
             // 
             this.heating.BackColor = System.Drawing.Color.Transparent;
             this.heating.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.helpProvider1.SetHelpKeyword(this.heating, "80");
+            this.helpProvider1.SetHelpNavigator(this.heating, System.Windows.Forms.HelpNavigator.TopicId);
             this.heating.Image = ((System.Drawing.Image)(resources.GetObject("heating.Image")));
             this.heating.Location = new System.Drawing.Point(0, 243);
             this.heating.Name = "heating";
+            this.helpProvider1.SetShowHelp(this.heating, true);
             this.heating.Size = new System.Drawing.Size(88, 93);
             this.heating.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.heating.TabIndex = 4;
@@ -121,9 +134,12 @@
             // 
             this.tv.BackColor = System.Drawing.Color.Transparent;
             this.tv.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.helpProvider1.SetHelpKeyword(this.tv, "60");
+            this.helpProvider1.SetHelpNavigator(this.tv, System.Windows.Forms.HelpNavigator.TopicId);
             this.tv.Image = ((System.Drawing.Image)(resources.GetObject("tv.Image")));
             this.tv.Location = new System.Drawing.Point(314, 33);
             this.tv.Name = "tv";
+            this.helpProvider1.SetShowHelp(this.tv, true);
             this.tv.Size = new System.Drawing.Size(85, 77);
             this.tv.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.tv.TabIndex = 5;
@@ -140,9 +156,12 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.radio.BackColor = System.Drawing.Color.Transparent;
             this.radio.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.helpProvider1.SetHelpKeyword(this.radio, "70");
+            this.helpProvider1.SetHelpNavigator(this.radio, System.Windows.Forms.HelpNavigator.TopicId);
             this.radio.Image = ((System.Drawing.Image)(resources.GetObject("radio.Image")));
             this.radio.Location = new System.Drawing.Point(347, 157);
             this.radio.Name = "radio";
+            this.helpProvider1.SetShowHelp(this.radio, true);
             this.radio.Size = new System.Drawing.Size(116, 86);
             this.radio.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.radio.TabIndex = 6;
@@ -200,6 +219,7 @@
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
             this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.helpToolStripMenuItem.Text = "Help";
+            this.helpToolStripMenuItem.Click += new System.EventHandler(this.helpToolStripMenuItem_Click);
             // 
             // feedbackToolStripMenuItem
             // 
@@ -215,6 +235,10 @@
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
+            // helpProvider1
+            // 
+            this.helpProvider1.HelpNamespace = "manual.chm";
+            // 
             // Home
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -224,10 +248,12 @@
             this.Controls.Add(this.menuStrip1);
             this.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.HelpButton = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Home";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Internet of Things - Home";
@@ -260,5 +286,6 @@
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem feedbackToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
+        private System.Windows.Forms.HelpProvider helpProvider1;
     }
 }
