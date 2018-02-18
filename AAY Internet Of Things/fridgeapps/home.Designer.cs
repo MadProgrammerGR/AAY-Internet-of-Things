@@ -1,6 +1,6 @@
-﻿namespace AAY_Internet_Of_Things.fridgeapps
+﻿namespace AAY_Internet_Of_Things.FridgeApps
 {
-    partial class home
+    partial class Home
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,8 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // Home
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Name = "Home";
+            this.Size = new System.Drawing.Size(500, 360);
+            this.ResumeLayout(false);
+
         }
 
         #endregion

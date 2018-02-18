@@ -1,6 +1,6 @@
-﻿namespace AAY_Internet_Of_Things.fridgeapps
+﻿namespace AAY_Internet_Of_Things.FridgeApps
 {
-    partial class menu
+    partial class Menu
     {
         /// <summary> 
         /// Required designer variable.
@@ -38,13 +38,13 @@
             this.flowLayoutPanel1.Size = new System.Drawing.Size(470, 350);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
-            // menu
+            // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Desktop;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.Controls.Add(this.flowLayoutPanel1);
-            this.Name = "menu";
+            this.Name = "Menu";
             this.Size = new System.Drawing.Size(500, 360);
             this.ResumeLayout(false);
 

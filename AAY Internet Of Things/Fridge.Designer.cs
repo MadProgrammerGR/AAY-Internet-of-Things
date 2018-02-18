@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Fridge));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -55,7 +56,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.SteelBlue;
+            this.panel1.BackColor = System.Drawing.Color.Black;
             this.panel1.Location = new System.Drawing.Point(103, 33);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(500, 360);
@@ -75,6 +76,8 @@
             // 
             // pictureBox5
             // 
+            this.pictureBox5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox5.Enabled = false;
             this.pictureBox5.Image = global::AAY_Internet_Of_Things.Properties.Resources.home_button;
             this.pictureBox5.Location = new System.Drawing.Point(461, 3);
             this.pictureBox5.Name = "pictureBox5";
@@ -86,6 +89,8 @@
             // 
             // pictureBox4
             // 
+            this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox4.Enabled = false;
             this.pictureBox4.Image = global::AAY_Internet_Of_Things.Properties.Resources.options;
             this.pictureBox4.Location = new System.Drawing.Point(421, 3);
             this.pictureBox4.Name = "pictureBox4";
@@ -97,6 +102,8 @@
             // 
             // pictureBox3
             // 
+            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox3.Enabled = false;
             this.pictureBox3.Image = global::AAY_Internet_Of_Things.Properties.Resources.return_button;
             this.pictureBox3.Location = new System.Drawing.Point(381, 3);
             this.pictureBox3.Name = "pictureBox3";
@@ -108,6 +115,7 @@
             // 
             // pictureBox2
             // 
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Image = global::AAY_Internet_Of_Things.Properties.Resources.power_button;
             this.pictureBox2.Location = new System.Drawing.Point(3, 3);
             this.pictureBox2.Name = "pictureBox2";
@@ -121,13 +129,18 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackgroundImage = global::AAY_Internet_Of_Things.Properties.Resources.background_blue;
-            this.ClientSize = new System.Drawing.Size(668, 480);
+            this.ClientSize = new System.Drawing.Size(668, 461);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Fridge";
-            this.Text = "Form2";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Internet of Things - Fridge";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();

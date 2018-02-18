@@ -58,30 +58,29 @@
     <Compile Include="Fridge.Designer.cs">
       <DependentUpon>Fridge.cs</DependentUpon>
     </Compile>
-    <Compile Include="fridgeapps\App.cs" />
-    <Compile Include="fridgeapps\camera.cs">
+    <Compile Include="FridgeApps\Camera.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="fridgeapps\camera.Designer.cs">
-      <DependentUpon>camera.cs</DependentUpon>
+    <Compile Include="FridgeApps\Camera.Designer.cs">
+      <DependentUpon>Camera.cs</DependentUpon>
     </Compile>
-    <Compile Include="fridgeapps\home.cs">
+    <Compile Include="FridgeApps\Home.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="fridgeapps\home.Designer.cs">
-      <DependentUpon>home.cs</DependentUpon>
+    <Compile Include="FridgeApps\Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
     </Compile>
-    <Compile Include="fridgeapps\menu.cs">
+    <Compile Include="FridgeApps\Menu.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="fridgeapps\menu.Designer.cs">
-      <DependentUpon>menu.cs</DependentUpon>
+    <Compile Include="FridgeApps\Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
-    <Compile Include="fridgeapps\suntages.cs">
+    <Compile Include="FridgeApps\Recipes.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="fridgeapps\suntages.Designer.cs">
-      <DependentUpon>suntages.cs</DependentUpon>
+    <Compile Include="FridgeApps\Recipes.Designer.cs">
+      <DependentUpon>Recipes.cs</DependentUpon>
     </Compile>
     <Compile Include="Heating.cs">
       <SubType>Form</SubType>
@@ -132,14 +131,17 @@
     <EmbeddedResource Include="Fridge.resx">
       <DependentUpon>Fridge.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fridgeapps\camera.resx">
-      <DependentUpon>camera.cs</DependentUpon>
+    <EmbeddedResource Include="FridgeApps\Camera.resx">
+      <DependentUpon>Camera.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fridgeapps\menu.resx">
-      <DependentUpon>menu.cs</DependentUpon>
+    <EmbeddedResource Include="FridgeApps\Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fridgeapps\suntages.resx">
-      <DependentUpon>suntages.cs</DependentUpon>
+    <EmbeddedResource Include="FridgeApps\Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FridgeApps\Recipes.resx">
+      <DependentUpon>Recipes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Heating.resx">
       <DependentUpon>Heating.cs</DependentUpon>
@@ -181,12 +183,6 @@
     <None Include="Resources\bulb_on.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="images\bulb_on.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="images\bulb_off.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\tv_view.png" />
   </ItemGroup>
   <ItemGroup>
@@ -202,7 +198,6 @@
     <None Include="Resources\wardrobe2.png" />
     <None Include="Resources\wardrobe.png" />
     <None Include="Resources\tv.png" />
-    <None Include="images\fridge_inside.jpg" />
     <None Include="Resources\9dzV0.jpg" />
     <None Include="Resources\AlanSpeak-Fridge-open-300px.png" />
     <Content Include="Resources\background.png" />

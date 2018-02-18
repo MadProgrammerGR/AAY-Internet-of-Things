@@ -7,53 +7,54 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using AAY_Internet_Of_Things.fridgeapps;
 
 namespace AAY_Internet_Of_Things
 {
     public partial class Fridge : Form
     {
-        bool active;
+        private bool active = false;
+        private Stack<UserControl> history = new Stack<UserControl>();
         public Fridge()
         {
             InitializeComponent();
-            active = false;
-            panel1.BackColor = Color.Black;
         }
 
+        //on/off koumpi
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             active = !active;
-            if (active)
-            {
-                //Close screen
-                panel1.Controls.Clear();
-                panel1.BackColor = Color.Black;
-            }
-            else
-            {
-                //open screen
-                panel1.Controls.Clear();
-                panel1.Controls.Add(new fridgeapps.home());
-            }
+            if (active) pictureBox5_Click(null, null); //home koumpi
+            else panel1.Controls.Clear();
+            pictureBox3.Enabled = pictureBox4.Enabled = pictureBox5.Enabled = active;
         }
 
+        //back koumpi
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            App.go_back(panel1);
+            if (history.Count != 0){
+                panel1.Controls.Clear();
+                panel1.Controls.Add(history.Pop());
+            }
         }
 
+        //menu koumpi
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-            App.open_app(new fridgeapps.menu(),panel1);
-           
+            UserControl m = new FridgeApps.Menu();
+            history.Push(m);
+            panel1.Controls.Clear();
+            panel1.Controls.Add(m);
         }
 
+        //home koumpi
         private void pictureBox5_Click(object sender, EventArgs e)
         {
-            App.open_app(new fridgeapps.home(),panel1);
+            UserControl h = new FridgeApps.Home();
+            history.Push(h);
+            panel1.Controls.Clear();
+            panel1.Controls.Add(h);
         }
-
         
     }
+
 }

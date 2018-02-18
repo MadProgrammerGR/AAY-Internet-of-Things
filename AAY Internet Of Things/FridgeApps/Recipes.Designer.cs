@@ -1,6 +1,6 @@
-﻿namespace AAY_Internet_Of_Things.fridgeapps
+﻿namespace AAY_Internet_Of_Things.FridgeApps
 {
-    partial class suntages
+    partial class Recipes
     {
         /// <summary> 
         /// Required designer variable.
@@ -30,11 +30,12 @@
         {
             this.SuspendLayout();
             // 
-            // suntages
+            // Recipes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Name = "suntages";
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.Name = "Recipes";
             this.Size = new System.Drawing.Size(500, 360);
             this.ResumeLayout(false);
 

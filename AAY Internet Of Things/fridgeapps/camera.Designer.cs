@@ -1,6 +1,6 @@
-﻿namespace AAY_Internet_Of_Things.fridgeapps
+﻿namespace AAY_Internet_Of_Things.FridgeApps
 {
-    partial class camera
+    partial class Camera
     {
         /// <summary> 
         /// Required designer variable.

@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace AAY_Internet_Of_Things.fridgeapps
+namespace AAY_Internet_Of_Things.FridgeApps
 {
-    public partial class suntages : UserControl
+    public partial class Recipes : UserControl
     {
-        public suntages()
+        public Recipes()
         {
             InitializeComponent();
         }
