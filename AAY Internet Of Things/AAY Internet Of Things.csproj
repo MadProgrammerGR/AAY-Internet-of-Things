@@ -52,6 +52,37 @@
     <Compile Include="FeedBack.Designer.cs">
       <DependentUpon>FeedBack.cs</DependentUpon>
     </Compile>
+    <Compile Include="Fridge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fridge.Designer.cs">
+      <DependentUpon>Fridge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fridgeapps\App.cs" />
+    <Compile Include="fridgeapps\camera.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="fridgeapps\camera.Designer.cs">
+      <DependentUpon>camera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fridgeapps\home.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="fridgeapps\home.Designer.cs">
+      <DependentUpon>home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fridgeapps\menu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="fridgeapps\menu.Designer.cs">
+      <DependentUpon>menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fridgeapps\suntages.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="fridgeapps\suntages.Designer.cs">
+      <DependentUpon>suntages.cs</DependentUpon>
+    </Compile>
     <Compile Include="Heating.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,6 +123,18 @@
     </Compile>
     <EmbeddedResource Include="FeedBack.resx">
       <DependentUpon>FeedBack.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fridge.resx">
+      <DependentUpon>Fridge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fridgeapps\camera.resx">
+      <DependentUpon>camera.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fridgeapps\menu.resx">
+      <DependentUpon>menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fridgeapps\suntages.resx">
+      <DependentUpon>suntages.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Heating.resx">
       <DependentUpon>Heating.cs</DependentUpon>
@@ -154,6 +197,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\button_on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\fridge_inside.jpg" />
+    <Content Include="Resources\background.png" />
+    <Content Include="Resources\background_blue.jpg" />
+    <Content Include="Resources\background_green.jpg" />
+    <Content Include="Resources\background_red.jpg" />
+    <Content Include="Resources\fridze-zoom.png" />
+    <Content Include="Resources\home_button.png" />
+    <Content Include="Resources\options.png" />
+    <Content Include="Resources\power_button.png" />
+    <Content Include="Resources\return_button.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

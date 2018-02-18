@@ -69,7 +69,7 @@ namespace AAY_Internet_Of_Things
 
         private void fridge_Click(object sender, EventArgs e)
         {
-
+            new Fridge().Show();
         }
 
         private void wardrobe_Click(object sender, EventArgs e)
