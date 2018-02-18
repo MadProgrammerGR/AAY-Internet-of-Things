@@ -85,7 +85,7 @@
             this.AcceptButton = this.button1;
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::AAY_Internet_Of_Things.Properties.Resources.background_blue;
             this.CancelButton = this.button2;
             this.ClientSize = new System.Drawing.Size(323, 266);
             this.Controls.Add(this.button2);

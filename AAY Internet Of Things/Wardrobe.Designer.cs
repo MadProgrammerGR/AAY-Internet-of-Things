@@ -52,7 +52,7 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Image = global::AAY_Internet_Of_Things.Properties.Resources.wardrobe2;
             this.pictureBox1.Location = new System.Drawing.Point(12, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(672, 413);
@@ -192,7 +192,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::AAY_Internet_Of_Things.Properties.Resources.background_blue;
             this.ClientSize = new System.Drawing.Size(696, 437);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);

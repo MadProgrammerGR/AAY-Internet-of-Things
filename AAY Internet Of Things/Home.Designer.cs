@@ -60,7 +60,7 @@
             this.fridge.Cursor = System.Windows.Forms.Cursors.Hand;
             this.helpProvider1.SetHelpKeyword(this.fridge, "40");
             this.helpProvider1.SetHelpNavigator(this.fridge, System.Windows.Forms.HelpNavigator.TopicId);
-            this.fridge.Image = ((System.Drawing.Image)(resources.GetObject("fridge.Image")));
+            this.fridge.Image = global::AAY_Internet_Of_Things.Properties.Resources.fridge;
             this.fridge.Location = new System.Drawing.Point(462, 317);
             this.fridge.Name = "fridge";
             this.helpProvider1.SetShowHelp(this.fridge, true);
@@ -79,7 +79,7 @@
             this.bulb.Cursor = System.Windows.Forms.Cursors.Hand;
             this.helpProvider1.SetHelpKeyword(this.bulb, "90");
             this.helpProvider1.SetHelpNavigator(this.bulb, System.Windows.Forms.HelpNavigator.TopicId);
-            this.bulb.Image = ((System.Drawing.Image)(resources.GetObject("bulb.Image")));
+            this.bulb.Image = global::AAY_Internet_Of_Things.Properties.Resources.bulb_off;
             this.bulb.Location = new System.Drawing.Point(175, 147);
             this.bulb.Name = "bulb";
             this.helpProvider1.SetShowHelp(this.bulb, true);
@@ -98,7 +98,7 @@
             this.wardrobe.Cursor = System.Windows.Forms.Cursors.Hand;
             this.helpProvider1.SetHelpKeyword(this.wardrobe, "50");
             this.helpProvider1.SetHelpNavigator(this.wardrobe, System.Windows.Forms.HelpNavigator.TopicId);
-            this.wardrobe.Image = ((System.Drawing.Image)(resources.GetObject("wardrobe.Image")));
+            this.wardrobe.Image = global::AAY_Internet_Of_Things.Properties.Resources.wardrobe;
             this.wardrobe.Location = new System.Drawing.Point(637, 54);
             this.wardrobe.Name = "wardrobe";
             this.helpProvider1.SetShowHelp(this.wardrobe, true);
@@ -117,7 +117,7 @@
             this.heating.Cursor = System.Windows.Forms.Cursors.Hand;
             this.helpProvider1.SetHelpKeyword(this.heating, "80");
             this.helpProvider1.SetHelpNavigator(this.heating, System.Windows.Forms.HelpNavigator.TopicId);
-            this.heating.Image = ((System.Drawing.Image)(resources.GetObject("heating.Image")));
+            this.heating.Image = global::AAY_Internet_Of_Things.Properties.Resources.heating;
             this.heating.Location = new System.Drawing.Point(0, 243);
             this.heating.Name = "heating";
             this.helpProvider1.SetShowHelp(this.heating, true);
@@ -136,7 +136,7 @@
             this.tv.Cursor = System.Windows.Forms.Cursors.Hand;
             this.helpProvider1.SetHelpKeyword(this.tv, "60");
             this.helpProvider1.SetHelpNavigator(this.tv, System.Windows.Forms.HelpNavigator.TopicId);
-            this.tv.Image = ((System.Drawing.Image)(resources.GetObject("tv.Image")));
+            this.tv.Image = global::AAY_Internet_Of_Things.Properties.Resources.tv;
             this.tv.Location = new System.Drawing.Point(314, 33);
             this.tv.Name = "tv";
             this.helpProvider1.SetShowHelp(this.tv, true);
@@ -158,7 +158,7 @@
             this.radio.Cursor = System.Windows.Forms.Cursors.Hand;
             this.helpProvider1.SetHelpKeyword(this.radio, "70");
             this.helpProvider1.SetHelpNavigator(this.radio, System.Windows.Forms.HelpNavigator.TopicId);
-            this.radio.Image = ((System.Drawing.Image)(resources.GetObject("radio.Image")));
+            this.radio.Image = global::AAY_Internet_Of_Things.Properties.Resources.radio;
             this.radio.Location = new System.Drawing.Point(347, 157);
             this.radio.Name = "radio";
             this.helpProvider1.SetShowHelp(this.radio, true);
@@ -174,7 +174,7 @@
             // house
             // 
             this.house.BackColor = System.Drawing.Color.Transparent;
-            this.house.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("house.BackgroundImage")));
+            this.house.BackgroundImage = global::AAY_Internet_Of_Things.Properties.Resources.house;
             this.house.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.house.Controls.Add(this.bulb);
             this.house.Controls.Add(this.fridge);
@@ -242,7 +242,7 @@
             // Home
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::AAY_Internet_Of_Things.Properties.Resources.background_green;
             this.ClientSize = new System.Drawing.Size(849, 559);
             this.Controls.Add(this.house);
             this.Controls.Add(this.menuStrip1);

@@ -142,7 +142,7 @@
             // Heating
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::AAY_Internet_Of_Things.Properties.Resources.background_blue;
             this.ClientSize = new System.Drawing.Size(280, 366);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label4);
