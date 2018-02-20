@@ -12,51 +12,39 @@ namespace AAY_Internet_Of_Things.FridgeApps
 {
     public partial class Menu : UserControl
     {
-        public Menu()
+        private Action<object, EventArgs> icon_Click;
+
+        public Menu(EventHandler iconClick)
         {
             InitializeComponent();
-            flowLayoutPanel1.Controls.Add(
-                new MenuIcon(Properties.Resources.if_Recipe_Book_89064,"Συνταγές",new Recipes()).flp);
-            flowLayoutPanel1.Controls.Add(
-                new MenuIcon(Properties.Resources.AlanSpeak_Fridge_open_300px, "Εσωτερικό ψτγείου", new Camera()).flp);
-            flowLayoutPanel1.Controls.Add(
-                new MenuIcon(Properties.Resources.browser_icon, "Internet", new Internet()).flp);
-            flowLayoutPanel1.Controls.Add(
-                new MenuIcon(null,"Kairos",null).flp);
-            flowLayoutPanel1.Controls.Add(
-                new MenuIcon(null, "Hmerologio", null).flp);
+            flowLayoutPanel1.Controls.AddRange(new Control[] {
+                new MenuIcon(Properties.Resources.if_Recipe_Book_89064,"Συνταγές",new Recipes(), iconClick),
+                new MenuIcon(Properties.Resources.AlanSpeak_Fridge_open_300px, "Εσωτερικό ψυγείου", new Camera(), iconClick),
+                new MenuIcon(Properties.Resources.browser_icon, "Internet", new Internet(), iconClick),
+                new MenuIcon(null, "Kairos", null, iconClick),
+                new MenuIcon(null, "Hmerologio", null, iconClick)});
         }
+    }
 
-        class MenuIcon
+    class MenuIcon : FlowLayoutPanel
+    {
+        public MenuIcon(Image img, String name, Control target, EventHandler icon_Click) : base()
         {
-            public FlowLayoutPanel flp { get; }
+            this.Size = new Size(80, 120);
             PictureBox icon = new PictureBox();
+            icon.Size = new Size(80, 80);
+            icon.Margin = Padding.Empty; //gia to bug pou kovotan de3ia
+            icon.SizeMode = PictureBoxSizeMode.StretchImage;
+            icon.Image = img;
+            icon.Click += icon_Click;
             Label lbl = new Label();
-            Control appcontrol { get; }
-
-            public MenuIcon(System.Drawing.Image img, String name, Control control)
-            {
-                flp = new FlowLayoutPanel();
-                flp.Size = new Size(80, 120);
-                icon.Size = new Size(80, 80);
-                icon.SizeMode = PictureBoxSizeMode.StretchImage;
-                icon.Image = img;
-                lbl.Text = name;
-                flp.Controls.Add(icon);
-                flp.Controls.Add(lbl);
-                appcontrol = control;
-                icon.Click += icon_Click;
-            }
-
-            private void icon_Click(object sender, EventArgs e)
-            {
-                if (!Fridge.apps.ContainsKey(lbl.Text))
-                    Fridge.apps.Add(lbl.Text, appcontrol);
-                Fridge.history.Push(lbl.Text);
-                Control fridgepanel = flp.Parent.Parent.Parent;
-                fridgepanel.Controls.Clear();
-                fridgepanel.Controls.Add(appcontrol);
-            }
+            lbl.Text = name;
+            lbl.TextAlign = ContentAlignment.MiddleCenter; //gia na
+            lbl.AutoSize = false; // menei katw
+            lbl.Width = icon.Width; // apo thn eikona
+            this.Controls.Add(icon);
+            this.Controls.Add(lbl);
+            this.Tag = target;
         }
-        }
+    }
 }

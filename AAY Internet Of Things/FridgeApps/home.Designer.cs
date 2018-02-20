@@ -35,24 +35,26 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Arial", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.label2.Location = new System.Drawing.Point(17, 21);
+            this.label2.BackColor = System.Drawing.Color.Yellow;
+            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label2.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.label2.Location = new System.Drawing.Point(18, 16);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(158, 24);
+            this.label2.Size = new System.Drawing.Size(147, 26);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Humidity: 40%";
+            this.label2.Text = "Υγρασία: 40%";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Arial", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.label1.Location = new System.Drawing.Point(17, 74);
+            this.label1.BackColor = System.Drawing.Color.Yellow;
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label1.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.label1.Location = new System.Drawing.Point(18, 42);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(115, 24);
+            this.label1.Size = new System.Drawing.Size(195, 26);
             this.label1.TabIndex = 3;
-            this.label1.Text = "Temp: 5°C";
+            this.label1.Text = "Θερμοκρασία: 5°C";
             // 
             // Home
             // 

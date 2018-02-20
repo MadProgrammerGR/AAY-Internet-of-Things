@@ -49,7 +49,7 @@ namespace AAY_Internet_Of_Things
         private void pictureBox4_Click(object sender, EventArgs e)
         {
             if(!apps.ContainsKey("menu"))
-                apps.Add("menu",new FridgeApps.Menu());
+                apps.Add("menu",new FridgeApps.Menu(icon_Click));
             history.Push("menu");
             panel1.Controls.Clear();
             panel1.Controls.Add(apps["menu"]);
@@ -65,8 +65,20 @@ namespace AAY_Internet_Of_Things
             panel1.Controls.Add(apps["home"]);
         }
 
-        
-        
+        //menu icons
+        private void icon_Click(object sender, EventArgs e)
+        {
+            Control menuIcon = ((PictureBox)sender).Parent;
+            Control target = (Control)menuIcon.Tag;
+            String nameKey = menuIcon.Controls[1].Text; //text tou label tou menuicon
+            if (!apps.ContainsKey(nameKey))
+                apps.Add(nameKey, target);
+            history.Push(nameKey);
+            panel1.Controls.Clear();
+            panel1.Controls.Add(target);
+        }
+
+
     }
 
 }
