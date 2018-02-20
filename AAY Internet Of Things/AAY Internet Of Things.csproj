@@ -70,6 +70,12 @@
     <Compile Include="FridgeApps\Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
+    <Compile Include="FridgeApps\Internet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FridgeApps\Internet.Designer.cs">
+      <DependentUpon>Internet.cs</DependentUpon>
+    </Compile>
     <Compile Include="FridgeApps\Menu.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -136,6 +142,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FridgeApps\Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FridgeApps\Internet.resx">
+      <DependentUpon>Internet.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FridgeApps\Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>

@@ -20,7 +20,7 @@ namespace AAY_Internet_Of_Things.FridgeApps
             flowLayoutPanel1.Controls.Add(
                 new MenuIcon(Properties.Resources.AlanSpeak_Fridge_open_300px, "Εσωτερικό ψτγείου", new Camera()).flp);
             flowLayoutPanel1.Controls.Add(
-                new MenuIcon(Properties.Resources.browser_icon, "Internet", null).flp);
+                new MenuIcon(Properties.Resources.browser_icon, "Internet", new Internet()).flp);
             flowLayoutPanel1.Controls.Add(
                 new MenuIcon(null,"Kairos",null).flp);
             flowLayoutPanel1.Controls.Add(
