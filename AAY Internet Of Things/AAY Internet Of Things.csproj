@@ -88,6 +88,12 @@
     <Compile Include="FridgeApps\Recipes.Designer.cs">
       <DependentUpon>Recipes.cs</DependentUpon>
     </Compile>
+    <Compile Include="FridgeApps\Weather.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FridgeApps\Weather.Designer.cs">
+      <DependentUpon>Weather.cs</DependentUpon>
+    </Compile>
     <Compile Include="Heating.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -152,6 +158,9 @@
     <EmbeddedResource Include="FridgeApps\Recipes.resx">
       <DependentUpon>Recipes.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FridgeApps\Weather.resx">
+      <DependentUpon>Weather.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Heating.resx">
       <DependentUpon>Heating.cs</DependentUpon>
     </EmbeddedResource>
@@ -204,6 +213,8 @@
     <None Include="Resources\button_on.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\weather2.png" />
+    <None Include="Resources\weather.png" />
     <None Include="Resources\wardrobe2.png" />
     <None Include="Resources\wardrobe.png" />
     <None Include="Resources\tv.png" />

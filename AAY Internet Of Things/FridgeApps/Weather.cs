@@ -10,18 +10,11 @@ using System.Windows.Forms;
 
 namespace AAY_Internet_Of_Things.FridgeApps
 {
-    public partial class Home : UserControl
+    public partial class Weather : UserControl
     {
-        public Home(MouseEventHandler wallpaperClick)
+        public Weather()
         {
             InitializeComponent();
-            this.MouseClick += wallpaperClick;
-            timer1_Tick(null, null);
-        }
-
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            label5.Text = DateTime.Now.ToLongTimeString();
         }
     }
 }

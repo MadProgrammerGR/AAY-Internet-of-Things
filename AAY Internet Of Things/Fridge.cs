@@ -14,8 +14,8 @@ namespace AAY_Internet_Of_Things
     public partial class Fridge : Form
     {
         private bool active = false;
-        static public Stack<string> history = new Stack<string>();
-        static public Dictionary<string,Control> apps = new Dictionary<string, Control>();
+        private Stack<string> history = new Stack<string>();
+        private Dictionary<string,Control> apps = new Dictionary<string, Control>();
         public Fridge()
         {
             InitializeComponent();
@@ -26,23 +26,23 @@ namespace AAY_Internet_Of_Things
         {
             active = !active;
             if (active) pictureBox5_Click(null, null); //home koumpi
-            else panel1.Controls.Clear();
+            else { panel1.Controls.Clear(); history.Clear(); apps.Clear(); }
             pictureBox3.Enabled = pictureBox4.Enabled = pictureBox5.Enabled = active;
         }
 
         //back koumpi
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            if (history.Count != 0){
+            if (history.Count >= 2){
                 panel1.Controls.Clear();
-                panel1.Controls.Add(apps[history.Pop()]);
+                history.Pop();
+                panel1.Controls.Add(apps[history.Peek()]);
             }
             else
             {
                 panel1.Controls.Clear();
                 panel1.Controls.Add(apps["home"]);
             }
-
         }
 
         //menu koumpi
@@ -59,7 +59,7 @@ namespace AAY_Internet_Of_Things
         private void pictureBox5_Click(object sender, EventArgs e)
         {
             if(!apps.ContainsKey("home"))
-                apps.Add("home", new FridgeApps.Home());
+                apps.Add("home", new FridgeApps.Home(pictureBox4_Click));
             history.Push("home");
             panel1.Controls.Clear();
             panel1.Controls.Add(apps["home"]);
