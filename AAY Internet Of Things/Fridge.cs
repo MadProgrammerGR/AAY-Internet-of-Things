@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,7 +14,8 @@ namespace AAY_Internet_Of_Things
     public partial class Fridge : Form
     {
         private bool active = false;
-        private Stack<UserControl> history = new Stack<UserControl>();
+        static public Stack<string> history = new Stack<string>();
+        static public Dictionary<string,Control> apps = new Dictionary<string, Control>();
         public Fridge()
         {
             InitializeComponent();
@@ -33,27 +35,37 @@ namespace AAY_Internet_Of_Things
         {
             if (history.Count != 0){
                 panel1.Controls.Clear();
-                panel1.Controls.Add(history.Pop());
+                panel1.Controls.Add(apps[history.Pop()]);
             }
+            else
+            {
+                panel1.Controls.Clear();
+                panel1.Controls.Add(apps["home"]);
+            }
+
         }
 
         //menu koumpi
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-            UserControl m = new FridgeApps.Menu();
-            history.Push(m);
+            if(!apps.ContainsKey("menu"))
+                apps.Add("menu",new FridgeApps.Menu());
+            history.Push("menu");
             panel1.Controls.Clear();
-            panel1.Controls.Add(m);
+            panel1.Controls.Add(apps["menu"]);
         }
 
         //home koumpi
         private void pictureBox5_Click(object sender, EventArgs e)
         {
-            UserControl h = new FridgeApps.Home();
-            history.Push(h);
+            if(!apps.ContainsKey("home"))
+                apps.Add("home", new FridgeApps.Home());
+            history.Push("home");
             panel1.Controls.Clear();
-            panel1.Controls.Add(h);
+            panel1.Controls.Add(apps["home"]);
         }
+
+        
         
     }
 
