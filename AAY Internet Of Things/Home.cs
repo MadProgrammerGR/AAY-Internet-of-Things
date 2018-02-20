@@ -117,6 +117,5 @@ namespace AAY_Internet_Of_Things
         {
             Help.ShowHelp(this, "manual.chm", HelpNavigator.TopicId, "30");
         }
-
     }
 }

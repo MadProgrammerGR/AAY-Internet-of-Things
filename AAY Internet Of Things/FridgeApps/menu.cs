@@ -16,17 +16,49 @@ namespace AAY_Internet_Of_Things.FridgeApps
         {
             InitializeComponent();
             flowLayoutPanel1.Controls.AddRange(new Control[] {
-                new MenuIcon(Properties.Resources.if_Recipe_Book_89064,"Συνταγές",new Recipes(), iconClick),
-                new MenuIcon(Properties.Resources.AlanSpeak_Fridge_open_300px, "Εσωτερικό ψυγείου", new Camera(), iconClick),
-                new MenuIcon(Properties.Resources.browser_icon, "Internet", new Internet(), iconClick),
-                new MenuIcon(Properties.Resources.weather, "Καιρός", new Weather(), iconClick),
-                new MenuIcon(null, "Ημερολόγιο", null, iconClick)});
+                new MenuIcon(Properties.Resources.if_Recipe_Book_89064,"Συνταγές",new Recipes(), iconClick, iconDragStart, iconMove, iconDragEnd),
+                new MenuIcon(Properties.Resources.AlanSpeak_Fridge_open_300px, "Εσωτερικό ψυγείου", new Camera(), iconClick, iconDragStart, iconMove, iconDragEnd),
+                new MenuIcon(Properties.Resources.browser_icon, "Internet", new Internet(), iconClick, iconDragStart, iconMove, iconDragEnd),
+                new MenuIcon(Properties.Resources.weather, "Καιρός", new Weather(), iconClick, iconDragStart, iconMove, iconDragEnd),
+                new MenuIcon(Properties.Resources.background_red, "Ημερολόγιο", null, iconClick, iconDragStart, iconMove, iconDragEnd)});
         }
+
+        public MenuIcon draggedIcon = null;
+        private Point startLoc;
+        private void iconDragStart(object sender, MouseEventArgs e){
+            if (sender as PictureBox == null) return; //bug fix, merikes fores dinei sender to flowlayout
+            draggedIcon = (MenuIcon)((PictureBox)sender).Parent;
+            draggedIcon.Parent = this;
+            draggedIcon.BringToFront();
+            startLoc = e.Location;
+        }
+
+        private void iconMove(object sender, MouseEventArgs e){
+            if (draggedIcon == null) return; //otan den sernei tpt
+            draggedIcon.Location = new Point(draggedIcon.Location.X + e.X - startLoc.X, draggedIcon.Location.Y + e.Y - startLoc.Y);
+        }
+
+        private void iconDragEnd(object sender, MouseEventArgs e)
+        {
+            if (draggedIcon == null) return;
+            Point targetLoc = new Point(draggedIcon.Location.X + e.X, draggedIcon.Location.Y + e.Y);
+            MenuIcon target = flowLayoutPanel1.GetChildAtPoint(targetLoc) as MenuIcon;
+            if (target == null){ //to afhse sto telos
+                flowLayoutPanel1.Controls.Add(draggedIcon);
+            }else{
+                flowLayoutPanel1.Controls.Add(draggedIcon);
+                int k = flowLayoutPanel1.Controls.IndexOf(target);
+                flowLayoutPanel1.Controls.SetChildIndex(draggedIcon, k);
+            }
+            draggedIcon = null;
+        }
+
     }
 
-    class MenuIcon : FlowLayoutPanel
+    public class MenuIcon : FlowLayoutPanel
     {
-        public MenuIcon(Image img, String name, Control target, EventHandler icon_Click) : base()
+        public MenuIcon(Image img, String name, Control target, 
+            EventHandler icon_Click, MouseEventHandler start, MouseEventHandler move, MouseEventHandler end) : base()
         {
             this.Size = new Size(80, 120);
             PictureBox icon = new PictureBox();
@@ -34,7 +66,10 @@ namespace AAY_Internet_Of_Things.FridgeApps
             icon.Margin = Padding.Empty; //gia to bug pou kovotan de3ia
             icon.SizeMode = PictureBoxSizeMode.StretchImage;
             icon.Image = img;
-            icon.Click += icon_Click;
+            icon.DoubleClick += icon_Click;
+            icon.MouseDown += start;
+            icon.MouseMove += move;
+            icon.MouseUp += end;
             icon.Cursor = Cursors.Hand;
             Label lbl = new Label();
             lbl.Text = name;
@@ -47,5 +82,6 @@ namespace AAY_Internet_Of_Things.FridgeApps
             this.Tag = target;
             this.Margin = new Padding(10);
         }
+
     }
 }

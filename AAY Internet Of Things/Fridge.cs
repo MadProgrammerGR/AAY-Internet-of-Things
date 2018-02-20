@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AAY_Internet_Of_Things.FridgeApps;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -49,7 +50,7 @@ namespace AAY_Internet_Of_Things
         private void pictureBox4_Click(object sender, EventArgs e)
         {
             if(!apps.ContainsKey("menu"))
-                apps.Add("menu",new FridgeApps.Menu(icon_Click));
+                apps.Add("menu",new FridgeApps.Menu(icon_DoubleClick));
             history.Push("menu");
             panel1.Controls.Clear();
             panel1.Controls.Add(apps["menu"]);
@@ -66,7 +67,7 @@ namespace AAY_Internet_Of_Things
         }
 
         //menu icons
-        private void icon_Click(object sender, EventArgs e)
+        private void icon_DoubleClick(object sender, EventArgs e)
         {
             Control menuIcon = ((PictureBox)sender).Parent;
             Control target = (Control)menuIcon.Tag;
