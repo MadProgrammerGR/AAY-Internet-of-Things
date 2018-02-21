@@ -23,5 +23,10 @@ namespace AAY_Internet_Of_Things.FridgeApps
         {
             label5.Text = DateTime.Now.ToLongTimeString();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            listBox1.Visible = listBox2.Visible = label6.Visible = label7.Visible = button1.Visible = !button1.Visible;
+        }
     }
 }

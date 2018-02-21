@@ -238,6 +238,7 @@
     <None Include="Resources\browser-icon.png" />
     <None Include="Resources\fridge.png" />
     <None Include="Resources\CalendarIcon.png" />
+    <None Include="Resources\bell.png" />
     <Content Include="Resources\fridze-zoom.png" />
     <None Include="Resources\heating.png" />
     <Content Include="Resources\home_button.png" />
