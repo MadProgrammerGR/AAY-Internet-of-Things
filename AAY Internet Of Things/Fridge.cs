@@ -83,6 +83,12 @@ namespace AAY_Internet_Of_Things
         {
             new FridgePhoneApp().Show();
         }
+
+        private void Fridge_HelpButtonClicked(object sender, CancelEventArgs e)
+        {
+            e.Cancel = true;
+            Help.ShowHelp(this, "manual.chm", HelpNavigator.TopicId, "40");
+        }
     }
 
 }
