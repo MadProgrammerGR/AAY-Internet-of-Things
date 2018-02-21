@@ -79,7 +79,10 @@ namespace AAY_Internet_Of_Things
             panel1.Controls.Add(target);
         }
 
-
+        private void button1_Click(object sender, EventArgs e)
+        {
+            new FridgePhoneApp().Show();
+        }
     }
 
 }

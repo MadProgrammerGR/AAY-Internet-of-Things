@@ -100,6 +100,12 @@
     <Compile Include="FridgeApps\Weather.Designer.cs">
       <DependentUpon>Weather.cs</DependentUpon>
     </Compile>
+    <Compile Include="FridgePhoneApp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FridgePhoneApp.Designer.cs">
+      <DependentUpon>FridgePhoneApp.cs</DependentUpon>
+    </Compile>
     <Compile Include="Heating.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -169,6 +175,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FridgeApps\Weather.resx">
       <DependentUpon>Weather.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FridgePhoneApp.resx">
+      <DependentUpon>FridgePhoneApp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Heating.resx">
       <DependentUpon>Heating.cs</DependentUpon>
@@ -247,6 +256,7 @@
     <None Include="Resources\keys_001-1024x480.png" />
     <None Include="Resources\logo.png" />
     <Content Include="Resources\options.png" />
+    <None Include="Resources\phone.png" />
     <Content Include="Resources\power_button.png" />
     <None Include="Resources\radio.png" />
     <None Include="Resources\RadioIcon.bmp" />
