@@ -58,6 +58,12 @@
     <Compile Include="Fridge.Designer.cs">
       <DependentUpon>Fridge.cs</DependentUpon>
     </Compile>
+    <Compile Include="FridgeApps\Calendar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FridgeApps\Calendar.Designer.cs">
+      <DependentUpon>Calendar.cs</DependentUpon>
+    </Compile>
     <Compile Include="FridgeApps\Camera.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -142,6 +148,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Fridge.resx">
       <DependentUpon>Fridge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FridgeApps\Calendar.resx">
+      <DependentUpon>Calendar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FridgeApps\Camera.resx">
       <DependentUpon>Camera.cs</DependentUpon>

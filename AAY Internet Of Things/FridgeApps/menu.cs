@@ -20,7 +20,7 @@ namespace AAY_Internet_Of_Things.FridgeApps
                 new MenuIcon(Properties.Resources.AlanSpeak_Fridge_open_300px, "Εσωτερικό ψυγείου", new Camera(), iconClick, iconDragStart, iconMove, iconDragEnd),
                 new MenuIcon(Properties.Resources.browser_icon, "Internet", new Internet(), iconClick, iconDragStart, iconMove, iconDragEnd),
                 new MenuIcon(Properties.Resources.weather, "Καιρός", new Weather(), iconClick, iconDragStart, iconMove, iconDragEnd),
-                new MenuIcon(Properties.Resources.CalendarIcon, "Ημερολόγιο", new MonthCalendar(), iconClick, iconDragStart, iconMove, iconDragEnd),
+                new MenuIcon(Properties.Resources.CalendarIcon, "Ημερολόγιο", new Calendar(), iconClick, iconDragStart, iconMove, iconDragEnd),
                 new MenuIcon(Properties.Resources.RadioIcon,"Ραδιόφωνο",(new Radio()).panel1,iconClick,iconDragStart,iconMove,iconDragEnd)
             });
                 
@@ -46,10 +46,8 @@ namespace AAY_Internet_Of_Things.FridgeApps
             if (draggedIcon == null) return;
             Point targetLoc = new Point(draggedIcon.Location.X + e.X, draggedIcon.Location.Y + e.Y);
             MenuIcon target = flowLayoutPanel1.GetChildAtPoint(targetLoc) as MenuIcon;
-            if (target == null){ //to afhse sto telos
-                flowLayoutPanel1.Controls.Add(draggedIcon);
-            }else{
-                flowLayoutPanel1.Controls.Add(draggedIcon);
+            flowLayoutPanel1.Controls.Add(draggedIcon); //to vazei sto telos
+            if (target != null){ //kai to metakinei sth swsth 8esh
                 int k = flowLayoutPanel1.Controls.IndexOf(target);
                 flowLayoutPanel1.Controls.SetChildIndex(draggedIcon, k);
             }
@@ -82,6 +80,7 @@ namespace AAY_Internet_Of_Things.FridgeApps
             lbl.Height = 40;
             this.Controls.Add(icon);
             this.Controls.Add(lbl);
+            target.Dock = DockStyle.Fill;
             this.Tag = target;
             this.Margin = new Padding(10);
         }
