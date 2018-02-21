@@ -228,6 +228,7 @@
     <None Include="Resources\fridge_inside.jpg" />
     <None Include="Resources\browser-icon.png" />
     <None Include="Resources\fridge.png" />
+    <None Include="Resources\CalendarIcon.png" />
     <Content Include="Resources\fridze-zoom.png" />
     <None Include="Resources\heating.png" />
     <Content Include="Resources\home_button.png" />
@@ -238,6 +239,9 @@
     <Content Include="Resources\options.png" />
     <Content Include="Resources\power_button.png" />
     <None Include="Resources\radio.png" />
+    <None Include="Resources\RadioIcon.bmp" />
+    <None Include="Resources\RadioIcon.png" />
+    <None Include="Resources\Recipes_background_img.jpg" />
     <Content Include="Resources\return_button.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

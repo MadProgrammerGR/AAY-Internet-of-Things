@@ -20,7 +20,10 @@ namespace AAY_Internet_Of_Things.FridgeApps
                 new MenuIcon(Properties.Resources.AlanSpeak_Fridge_open_300px, "Εσωτερικό ψυγείου", new Camera(), iconClick, iconDragStart, iconMove, iconDragEnd),
                 new MenuIcon(Properties.Resources.browser_icon, "Internet", new Internet(), iconClick, iconDragStart, iconMove, iconDragEnd),
                 new MenuIcon(Properties.Resources.weather, "Καιρός", new Weather(), iconClick, iconDragStart, iconMove, iconDragEnd),
-                new MenuIcon(Properties.Resources.background_red, "Ημερολόγιο", null, iconClick, iconDragStart, iconMove, iconDragEnd)});
+                new MenuIcon(Properties.Resources.CalendarIcon, "Ημερολόγιο", new MonthCalendar(), iconClick, iconDragStart, iconMove, iconDragEnd),
+                new MenuIcon(Properties.Resources.RadioIcon,"Ραδιόφωνο",(new Radio()).panel1,iconClick,iconDragStart,iconMove,iconDragEnd)
+            });
+                
         }
 
         public MenuIcon draggedIcon = null;

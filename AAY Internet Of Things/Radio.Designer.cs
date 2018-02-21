@@ -213,8 +213,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TrackBar trackBar2;
@@ -225,5 +223,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TrackBar trackBar1;
         private System.Windows.Forms.Label label7;
+        public System.Windows.Forms.Panel panel1;
     }
 }

@@ -16,5 +16,10 @@ namespace AAY_Internet_Of_Things.FridgeApps
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            checkedListBox1.Visible = !checkedListBox1.Visible;
+        }
     }
 }

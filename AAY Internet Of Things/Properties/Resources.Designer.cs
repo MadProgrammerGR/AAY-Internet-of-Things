@@ -173,6 +173,16 @@ namespace AAY_Internet_Of_Things.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap CalendarIcon {
+            get {
+                object obj = ResourceManager.GetObject("CalendarIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap fridge {
             get {
                 object obj = ResourceManager.GetObject("fridge", resourceCulture);
@@ -296,6 +306,26 @@ namespace AAY_Internet_Of_Things.Properties {
         internal static System.Drawing.Bitmap radio {
             get {
                 object obj = ResourceManager.GetObject("radio", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap RadioIcon {
+            get {
+                object obj = ResourceManager.GetObject("RadioIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Recipes_background_img {
+            get {
+                object obj = ResourceManager.GetObject("Recipes_background_img", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
